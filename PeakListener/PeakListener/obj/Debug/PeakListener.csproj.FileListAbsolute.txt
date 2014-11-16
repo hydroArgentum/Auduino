@@ -1,0 +1,11 @@
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\bin\Debug\PeakListener.exe.config
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\bin\Debug\PeakListener.exe
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\bin\Debug\PeakListener.pdb
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\bin\Debug\NAudio.dll
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\bin\Debug\NAudio.xml
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.csprojResolveAssemblyReference.cache
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.Form1.resources
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.Properties.Resources.resources
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.csproj.GenerateResource.Cache
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.exe
+c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.pdb
