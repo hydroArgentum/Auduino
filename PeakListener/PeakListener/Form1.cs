@@ -37,26 +37,46 @@ namespace PeakListener
             if (comboBox1.SelectedItem != null && port_found)
             {
                 var device = (NAudio.CoreAudioApi.MMDevice)comboBox1.SelectedItem;
-                int raw_value = (int)(device.AudioMeterInformation.MasterPeakValue * 30000);
-                if (raw_value < 290)
+                uint raw_value = (uint)(device.AudioMeterInformation.MasterPeakValue * 4294967295);
+                if (raw_value < (4294967295 - 134217728))
                 {
                     number_led = 1;
                 }
-                else if (raw_value < 29995)
+                else if (raw_value < (4294967295 - 16777216))
                 {
                     number_led = 2;
                 }
-                else if (raw_value < 29996)
+                else if (raw_value < (4294967295 - 2097152))
                 {
                     number_led = 3;
                 }
-                else if (raw_value < 29997)
+                else if (raw_value < (4294967295 - 262144))
                 {
                     number_led = 4;
                 }
-                else
+                else if (raw_value < (4294967295 - 32768))
                 {
                     number_led = 5;
+                }
+                else if (raw_value < (4294967295 - 4096))
+                {
+                    number_led = 6;
+                }
+                else if (raw_value < (4294967295 - 512))
+                {
+                    number_led = 7;
+                }
+                else if (raw_value < (4294967295 - 64))
+                {
+                    number_led = 8;
+                }
+                else if (raw_value < (4294967295 - 8))
+                {
+                    number_led = 9;
+                }
+                else
+                {
+                    number_led = 10;
                 }
                 try
                 {
@@ -65,7 +85,7 @@ namespace PeakListener
                     buffer[0] = number_led;
                     serial_device.Open();
                     serial_device.Write(buffer, 0, 1);
-                    Thread.Sleep(100);
+                    Thread.Sleep(10);
                     serial_device.Close();
                 }
                 catch (Exception ex) { }
