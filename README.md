@@ -1,5 +1,6 @@
 Auduino
 =======
+An Audio visualization project using Arduino.
 
 # About Auduino
 
