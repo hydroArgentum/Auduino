@@ -38,39 +38,39 @@ namespace PeakListener
             {
                 var device = (NAudio.CoreAudioApi.MMDevice)comboBox1.SelectedItem;
                 uint raw_value = (uint)(device.AudioMeterInformation.MasterPeakValue * 4294967295);
-                if (raw_value < (4294967295 - 134217728))
+                if (raw_value < (4294967295 - 1527855))
                 {
                     number_led = 1;
                 }
-                else if (raw_value < (4294967295 - 16777216))
+                else if (raw_value < (4294967295 - 611119))
                 {
                     number_led = 2;
                 }
-                else if (raw_value < (4294967295 - 2097152))
+                else if (raw_value < (4294967295 - 457262))
                 {
                     number_led = 3;
                 }
-                else if (raw_value < (4294967295 - 262144))
+                else if (raw_value < (4294967295 - 436391))
                 {
                     number_led = 4;
                 }
-                else if (raw_value < (4294967295 - 32768))
+                else if (raw_value < (4294967295 - 429407))
                 {
                     number_led = 5;
                 }
-                else if (raw_value < (4294967295 - 4096))
+                else if (raw_value < (4294967295 - 429317))
                 {
                     number_led = 6;
                 }
-                else if (raw_value < (4294967295 - 512))
+                else if (raw_value < (4294967295 - 429158))
                 {
                     number_led = 7;
                 }
-                else if (raw_value < (4294967295 - 64))
+                else if (raw_value < (4294967295 - 429059))
                 {
                     number_led = 8;
                 }
-                else if (raw_value < (4294967295 - 8))
+                else if (raw_value < (4294967295 - 429053))
                 {
                     number_led = 9;
                 }
@@ -78,6 +78,8 @@ namespace PeakListener
                 {
                     number_led = 10;
                 }
+                label1.Text = number_led.ToString();
+                this.Refresh();
                 try
                 {
                     //Sent message.
@@ -85,10 +87,16 @@ namespace PeakListener
                     buffer[0] = number_led;
                     serial_device.Open();
                     serial_device.Write(buffer, 0, 1);
-                    Thread.Sleep(10);
+                    Thread.Sleep(1);
                     serial_device.Close();
                 }
-                catch (Exception ex) { }
+                catch (Exception ex) {
+                    port_found = false;
+                }
+            }
+            else
+            {
+                button1.Enabled = true;
             }
         }
 
