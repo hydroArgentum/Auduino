@@ -38,19 +38,19 @@ namespace PeakListener
             {
                 var device = (NAudio.CoreAudioApi.MMDevice)comboBox1.SelectedItem;
                 uint raw_value = (uint)(device.AudioMeterInformation.MasterPeakValue * 4294967295);
-                if (raw_value < (4294967295 - 1527855))
+                if (raw_value < (4294967295 - 2148247575))
                 {
                     number_led = 1;
                 }
-                else if (raw_value < (4294967295 - 611119))
+                else if (raw_value < (4294967295 - 1074830413))
                 {
                     number_led = 2;
                 }
-                else if (raw_value < (4294967295 - 457262))
+                else if (raw_value < (4294967295 - 537701534))
                 {
                     number_led = 3;
                 }
-                else if (raw_value < (4294967295 - 436391))
+                else if (raw_value < (4294967295 - 432899))
                 {
                     number_led = 4;
                 }

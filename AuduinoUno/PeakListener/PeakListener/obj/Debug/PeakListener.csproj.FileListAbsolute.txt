@@ -9,3 +9,6 @@ c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\o
 c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.csproj.GenerateResource.Cache
 c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.exe
 c:\users\baekj\documents\visual studio 2013\Projects\PeakListener\PeakListener\obj\Debug\PeakListener.pdb
+C:\Users\baekj\Documents\GitHub\Auduino\AuduinoUno\PeakListener\PeakListener\bin\Debug\PeakListener.exe.config
+C:\Users\baekj\Documents\GitHub\Auduino\AuduinoUno\PeakListener\PeakListener\obj\Debug\PeakListener.exe
+C:\Users\baekj\Documents\GitHub\Auduino\AuduinoUno\PeakListener\PeakListener\obj\Debug\PeakListener.pdb
